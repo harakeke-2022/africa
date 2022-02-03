@@ -1,24 +1,15 @@
-import React, {useState, useEffect} from 'react'
-import { getWeather } from './weatherAPI'
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import { Country } from './Country'
+
 
 const App = () => {
-
-  const [weather, setWeather] = useState('')
-  const [count, setCount] = useState(0)
-
-  useEffect(() => {
-    getGreeting()
-      .then((weather) => {
-        console.log(weather)
-        setWeather(weather)
-      })
-  }, [])
-
   return (
     <>
- <ul>
-   <li></li>
- </ul>
+      <h1>Welcome to the Continient of Africa 🌍 </h1>
+      <Routes>
+        <button><Route path='/:id' element={<Country />} />Click</button>
+      </Routes>
     </>
   )
 }
