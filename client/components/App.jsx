@@ -1,24 +1,24 @@
 import React, {useState, useEffect} from 'react'
-import {getGreeting} from '../apiClient'
+import { getWeather } from './weatherAPI'
 
 const App = () => {
 
-  const [greeting, setGreeting] = useState('')
+  const [weather, setWeather] = useState('')
   const [count, setCount] = useState(0)
 
   useEffect(() => {
     getGreeting()
-      .then((greeting) => {
-        console.log(greeting)
-        setGreeting(greeting)
+      .then((weather) => {
+        console.log(weather)
+        setWeather(weather)
       })
-  }, [count])
+  }, [])
 
   return (
     <>
-    {count}
-    <h1>{greeting}</h1>
-    <button onClick={() => setCount(count + 1)}>Click</button>
+ <ul>
+   <li></li>
+ </ul>
     </>
   )
 }
