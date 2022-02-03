@@ -1,14 +1,14 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import { Country } from './Country'
-
-
+import Country from './Country'
+import Home from './Home'
 const App = () => {
   return (
     <>
-      <h1>Welcome to the Continient of Africa 🌍 </h1>
+
       <Routes>
-        <button><Route path='/:id' element={<Country />} />Click</button>
+        <Route path='/' element={<Home />} />
+        <Route path="/:id" element={<Country />} />
       </Routes>
     </>
   )
