@@ -34,4 +34,15 @@ router.post('/:id', (req, res) => {
     })
 })
 
+router.delete('/:id', (req, res) => {
+  const id = Number(req.params.id)
+  db.deleteComment(id)
+    .then(() => {
+      return res.sendStatus(200)
+    })
+    .catch((err) => {
+      res.status(500).json({ error: err.message })
+    })
+})
+
 module.exports = router

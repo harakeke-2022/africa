@@ -14,7 +14,13 @@ function addNewComment (newComment, db = connection) {
     .insert({ comment, author, countries_Id: countriesId })
 }
 
+function deleteComment (id, db = connection) {
+  return db('Comments')
+    .where('id', id)
+    .delete()
+}
 module.exports = {
   getComments,
-  addNewComment
+  addNewComment,
+  deleteComment
 }
