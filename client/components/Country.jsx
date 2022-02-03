@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+import React from 'react'
 import Weather from './Weather'
 
 function Country () {
@@ -6,7 +6,11 @@ function Country () {
 
   return (
 
-    <Weather />
+    <>
+      <Weather />
+      < h1>{Weather.body}</h1>
+    </>
+
   )
 }
 

@@ -2,8 +2,6 @@ import React, { useEffect, useState } from 'react'
 import { getWeather } from './weatherAPI'
 
 function Weather () {
-  console.log('Weather is rendered')
-
   const [weather, setWeather] = useState([])
 
   useEffect(() =>
@@ -17,9 +15,12 @@ function Weather () {
       })
   , [])
 
+  console.log('Weather is rendered')
+
   return (
     <div>
-      <h1>{weather}</h1>
+      <h1>i love potatoes</h1>
+      <p>{weather.address}</p>
     </div>
   )
 }
