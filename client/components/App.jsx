@@ -1,24 +1,14 @@
-import React, {useState, useEffect} from 'react'
-import {getGreeting} from '../apiClient'
+import React from 'react'
+import { Route, Routes } from 'react-router-dom'
+import { Country } from './Country'
 
 const App = () => {
-
-  const [greeting, setGreeting] = useState('')
-  const [count, setCount] = useState(0)
-
-  useEffect(() => {
-    getGreeting()
-      .then((greeting) => {
-        console.log(greeting)
-        setGreeting(greeting)
-      })
-  }, [count])
-
   return (
     <>
-    {count}
-    <h1>{greeting}</h1>
-    <button onClick={() => setCount(count + 1)}>Click</button>
+      <h1>Welcome to the Continient of Africa 🌍 </h1>
+      <Routes>
+        <button><Route path='/:id' element={<Country />} />Click</button>
+      </Routes>
     </>
   )
 }
