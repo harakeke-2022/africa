@@ -30,16 +30,17 @@ function Country(props) {
     <section className='country-main'>
       <Weather />
 
-      < h1>{Weather.body}</h1>
 
+      < h1>{Weather.body}</h1>
       <Comment />
 
       <ul className="comments">
+        <span className='minititle'>🎉Recommendations </span>
         {data.map(item => {
           return (
             <li key='comment' className="comment-li">
-              <span className='comment'>{item.comment}</span>
-              <span className='author'>from {item.author}</span>
+              <span className='comment'><b>{item.comment}</b></span>
+              <span className='author'> from {item.author}</span>
             </li>
           )
         })}
