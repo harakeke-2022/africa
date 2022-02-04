@@ -1,28 +1,31 @@
 import React, { useState } from 'react'
 import { addNewComment } from '../apiClient'
 
-function Comment () {
-  const [input, setInput] = useState('')
+function Comment() {
+  const [input, setInput] = useState({
+    comment: '',
+    author: ''
+  })
 
-  function handleChange (event) {
-    setInput(event.taget.value)
+  function handleChange(e) {
+    console.log(input, e)
+    setInput({ ...input, [e.target.name]: e.target.value })
   }
 
-  function handleSubmit (event) {
-    event.preventDefault()
-    addNewComment(input)
-      .then(() => {
-        return null
-      })
+  function handleSubmit() {
+    console.log(`form handle Submmit:${input}`)
+    addNewComment(input, 1)
       .catch(err => {
         console.error(err)
       })
   }
+
   return (
-    <comment>
-      <input type='text' value={input} onChange={handleChange} />
-      <button onClick= {handleSubmit}>Add</button>
-    </comment>
+    <form className='comment-form'>
+      <input type='text' name="comment" value={input.comment} onChange={handleChange} placeholder="Put your comment" />
+      <input type='text' name="author" value={input.author} onChange={handleChange} placeholder="Put your name " />
+      <button onClick={handleSubmit}>Add</button>
+    </form>
   )
 }
 

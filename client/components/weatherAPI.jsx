@@ -12,4 +12,3 @@ export function getWeather () {
       console.error(err.message)
     })
 }
-a

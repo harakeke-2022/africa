@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import Weather from './Weather'
+import Comment from './Comment'
 
-import { getComments, addNewComment } from '../apiClient'
+import { getComments } from '../apiClient'
 
 function Country(props) {
   console.log('country is rendered')
@@ -31,8 +32,10 @@ function Country(props) {
     <>
       <Weather />
       < h1>{Weather.body}</h1>
-      <ul className="comments">
 
+      <Comment />
+
+      <ul className="comments">
         {data.map(item => {
           return (
             <li className="commnet-li">
