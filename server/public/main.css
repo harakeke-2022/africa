@@ -1,3 +1,11 @@
-.homePage {
-    
+body {
+    font-family: 'Coming Soon', cursive;
+}
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    background-color: #ffd9ae;
 }
