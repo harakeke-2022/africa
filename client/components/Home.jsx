@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-function Home() {
+function Home () {
   const navigate = useNavigate()
 
   const routeChange = () => {
@@ -17,7 +17,6 @@ function Home() {
       <audio src='/media/Toto-Africa.mp3' autoPlay="autoplay"></audio>
       <img src='/media/1Africa.png'></img>
       <button className="button" style={{ backgroundColor: '#2400ff' }} onClick={routeChange}>Click Me 🦁 </button>
-
 
     </div>
   )
