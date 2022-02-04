@@ -1,18 +1,18 @@
 import React, { useState } from 'react'
 import { addNewComment } from '../apiClient'
 
-function Comment() {
+function Comment () {
   const [input, setInput] = useState({
     comment: '',
     author: ''
   })
 
-  function handleChange(e) {
+  function handleChange (e) {
     console.log(input, e)
     setInput({ ...input, [e.target.name]: e.target.value })
   }
 
-  function handleSubmit() {
+  function handleSubmit () {
     console.log(`form handle Submmit:${input}`)
     addNewComment(input, 1)
       .catch(err => {
