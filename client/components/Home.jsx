@@ -1,16 +1,16 @@
 import React from 'react'
 import { useNavigate } from 'react-router-dom'
 
-function Home () {
+function Home() {
   const navigate = useNavigate()
 
   const routeChange = () => {
-    const path = '/:id'
+    const path = '/1'
     navigate(path)
   }
 
   return (
-    <div>
+    <div className='main'>
 
       <h1>Welcome to the Continient of Africa 🌍 </h1>
       <h3>Click the button to learn about South Africa</h3>

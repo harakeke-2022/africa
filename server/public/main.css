@@ -3,8 +3,14 @@ background-color: #bef1ff;
 font-family: 'Coming Soon', cursive;
 }
 
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
 .button {
-
+    margin-top: 3rem;
     background-color: #4CAF50; /* Green */
     border: none;
     color: white;
@@ -21,6 +27,8 @@ font-family: 'Coming Soon', cursive;
 
 h1 {
     text-align: center;
+    font-size: 3rem;
+}
 
 
 .country-main {
@@ -28,7 +36,51 @@ background-image: "/media/sherise-vd-7bbJBg1zN0o-unsplash.jpg";;
 }
 
   
-ul {
+.weather-box {
+
     background-color: #ffd9ae;
+    list-style: none;
+    padding: 2rem;
+    font-size: 1.5rem;
+    border: #4CAF50 dotted 5px;
 }
 
+.comments {
+    background-color: #ffd9ae;
+    list-style: none;
+    padding: 2rem;
+    font-size: 1.5rem;
+}
+.comment{
+    margin-right: 1rem;
+}
+
+/* comments Form */
+.country-main {
+    width: 100vw;
+}
+
+.comment-form {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+}
+
+.comment-form input {
+    outline: none;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 1rem 1rem;
+    border-radius: 10px;
+}
+.comment-form input::placeholder {
+     font-size: 1.2rem;
+}
+
+.comment-form input:first-child{
+    width: 40%;
+}
+.inpuauthor{
+    width: 40%;
+
+}
