@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { addNewComment } from ''
+import { addNewComment } from '../apiClient'
 
 function Comment () {
   const [input, setInput] = useState('')
@@ -8,7 +8,7 @@ function Comment () {
     setInput(event.taget.value)
   }
 
-  function handleChange (event) {
+  function handleSubmit (event) {
     event.preventDefault()
     addNewComment(input)
       .then(() => {
@@ -21,7 +21,7 @@ function Comment () {
   return (
     <comment>
       <input type='text' value={input} onChange={handleChange} />
-      <button onClick= {handleChange}>Add</button>
+      <button onClick= {handleSubmit}>Add</button>
     </comment>
   )
 }
