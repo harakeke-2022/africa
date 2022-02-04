@@ -1,19 +1,19 @@
 import React, { useState, useEffect } from 'react'
 import Weather from './Weather'
+import Comment from './Comment'
 
-import { getComments, addNewComment } from '../apiClient'
+import { getComments } from '../apiClient'
 
-function Country(props) {
+function Country (props) {
   console.log('country is rendered')
 
-  console.log("country props ::", props)
+  console.log('country props ::', props)
 
   const [data, setData] = useState([])
 
-
   useEffect(() => {
     console.log('using the effect')
-    getComments(1) //hardcording we need to change for id data
+    getComments(1) // hardcording we need to change for id data
       .then(resApi => {
         setData(resApi)
         return null
@@ -21,7 +21,6 @@ function Country(props) {
       .catch(err => {
         console.error(err)
       })
-
   }, [])
 
   console.log(data)
@@ -30,12 +29,15 @@ function Country(props) {
 
     <>
       <Weather />
-      < h1>{Weather.body}</h1>
-      <ul className="comments">
 
+      < h1>{Weather.body}</h1>
+
+      <Comment />
+
+      <ul className="comments">
         {data.map(item => {
           return (
-            <li className="commnet-li">
+            <li key = 'comment' className="comment-li">
               <span className='comment'>{item.comment}</span>
               <span className='author'>{item.author}</span>
             </li>

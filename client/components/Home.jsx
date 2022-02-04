@@ -18,6 +18,7 @@ function Home () {
       <img src='/media/1Africa.png'></img>
       <button className="button" style={{ backgroundColor: '#2400ff' }} onClick={routeChange}>Click Me 🦁 </button>
 
+
     </div>
   )
 }

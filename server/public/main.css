@@ -1,5 +1,6 @@
 body {
-background-color: #bef1ff
+background-color: #bef1ff;
+font-family: 'Coming Soon', cursive;
 }
 
 .button {
@@ -16,3 +17,13 @@ background-color: #bef1ff
     cursor: pointer;
     border-radius: 30px;
   }
+
+
+h1 {
+    text-align: center;
+}
+
+ul {
+    background-color: #ffd9ae;
+}
+
