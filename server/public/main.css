@@ -30,7 +30,14 @@ h1 {
     font-size: 3rem;
 }
 
+
+.country-main {
+background-image: "/media/sherise-vd-7bbJBg1zN0o-unsplash.jpg";;
+}
+
+  
 .weather-box {
+
     background-color: #ffd9ae;
     list-style: none;
     padding: 2rem;
