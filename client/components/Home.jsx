@@ -10,14 +10,13 @@ function Home () {
   }
 
   return (
-    <>
+    <div>
       <h1>Welcome to the Continient of Africa 🌍 </h1>
-      <h1>Hello i am home</h1>
       <audio src='/media/Toto-Africa.mp3' autoPlay="autoplay"></audio>
-      <img src='/media/1Africa.png'></img>
       <button onClick={routeChange}>Click Me 🦁 </button>
+      <img src='/media/1Africa.png'></img>
 
-    </>
+    </div>
 
   )
 }

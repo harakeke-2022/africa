@@ -1,10 +1,11 @@
 import request from 'superagent'
 
-export function getComments(id) {
+export function getComments (id) {
   return request
     .get(`/api/v1/africa/${id}`)
     .then(res => res.body)
 }
+
 
 export function addNewComment(input, id) {
   return request
