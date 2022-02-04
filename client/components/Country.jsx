@@ -4,7 +4,7 @@ import Comment from './Comment'
 
 import { getComments } from '../apiClient'
 
-function Country (props) {
+function Country(props) {
   console.log('country is rendered')
 
   console.log('country props ::', props)
@@ -27,7 +27,7 @@ function Country (props) {
 
   return (
 
-    <>
+    <section className='country-main'>
       <Weather />
 
       < h1>{Weather.body}</h1>
@@ -37,15 +37,15 @@ function Country (props) {
       <ul className="comments">
         {data.map(item => {
           return (
-            <li key = 'comment' className="comment-li">
+            <li key='comment' className="comment-li">
               <span className='comment'>{item.comment}</span>
-              <span className='author'>{item.author}</span>
+              <span className='author'>from {item.author}</span>
             </li>
           )
         })}
 
       </ul>
-    </>
+    </section>
 
   )
 }

@@ -24,7 +24,8 @@ function Weather () {
 
       <>
         <h1>Current weather in {weather.resolvedAddress}</h1>
-        <ul>
+        
+        <ul className='weather-box'>
           <li>Weather description: {weather.description}</li>
           <li>Weather timezone: {weather.timezone}</li>
           <li>Date: {weather.days[0].datetime}</li>

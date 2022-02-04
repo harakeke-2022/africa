@@ -22,9 +22,9 @@ function Comment() {
 
   return (
     <form className='comment-form'>
-      <input type='text' name="comment" value={input.comment} onChange={handleChange} placeholder="Put your comment" />
-      <input type='text' name="author" value={input.author} onChange={handleChange} placeholder="Put your name " />
-      <button onClick={handleSubmit}>Add</button>
+      <input type='text' name="comment" value={input.comment} onChange={handleChange} placeholder="Add your travel recommendations here" />
+      <input className='inpuauthor' type='text' name="author" value={input.author} onChange={handleChange} placeholder="Please add your name" />
+      <button className='button' onClick={handleSubmit}>Add</button>
     </form>
   )
 }
