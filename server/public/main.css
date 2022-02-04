@@ -21,8 +21,13 @@ font-family: 'Coming Soon', cursive;
 
 h1 {
     text-align: center;
+
+
+.country-main {
+background-image: "/media/sherise-vd-7bbJBg1zN0o-unsplash.jpg";;
 }
 
+  
 ul {
     background-color: #ffd9ae;
 }
