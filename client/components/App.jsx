@@ -1,8 +1,14 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Route, Routes } from 'react-router-dom'
+
 import Country from './Country'
 import Home from './Home'
+
+
 const App = () => {
+
+
+
   return (
     <>
 
