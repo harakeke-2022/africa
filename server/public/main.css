@@ -1,6 +1,23 @@
 body {
-    font-family: 'Coming Soon', cursive;
+background-color: #bef1ff;
+font-family: 'Coming Soon', cursive;
 }
+
+.button {
+
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 30px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 30px;
+  }
+
 
 h1 {
     text-align: center;
@@ -9,3 +26,4 @@ h1 {
 ul {
     background-color: #ffd9ae;
 }
+
