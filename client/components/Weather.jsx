@@ -25,12 +25,12 @@ function Weather () {
       <>
         <h1>Current weather in {weather.resolvedAddress}</h1>
         <ul>
-          <li>Weather description: {weather.description}</li>
-          <li>Weather timezone: {weather.timezone}</li>
-          <li>Date: {weather.days[0].datetime}</li>
-          <li>Current temp: {weather.days[0].temp}</li>
-          <li>Temp min: {weather.days[0].tempmin} Temp max: {weather.days[0].tempmax} </li>
-          <li>Humidity: {weather.days[0].humidity} Rain: {weather.days[0].precip}</li>
+          <li>☀️ Weather description: {weather.description}</li>
+          <li>☁️ Weather timezone: {weather.timezone}</li>
+          <li>📅 Date: {weather.days[0].datetime}</li>
+          <li>🌡 Current temp: {weather.days[0].temp}</li>
+          <li>❄️ Temp min: {weather.days[0].tempmin} Temp max: {weather.days[0].tempmax} </li>
+          <li>💦 Humidity: {weather.days[0].humidity} 🌧 Rain: {weather.days[0].precip}</li>
         </ul>
       </>
     )
