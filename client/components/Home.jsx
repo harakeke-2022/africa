@@ -5,6 +5,8 @@ function Home () {
     <>
       <h1>Welcome to the Continient of Africa 🌍 </h1>
       <h1>Hello i am home</h1>
+      <audio src="/media/Toto-Africa.mp3" autoPlay="autoplay"></audio>
+
     </>
 
   )
