@@ -105,3 +105,23 @@ h1 {
     background-color: rgba(255, 255, 255, .7);
     border: #4CAF50 dashed 2px;
 }
+
+@media only screen and (max-width: 320px) {
+    body {
+        border: #4CAF50 dashed 10px;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    body {
+        border: #a50e0e dashed 10px;
+    }
+  }
+  
+  @media screen and (min-width: 1200px) {
+    body {
+        border: #af4c96 dashed 10px;
+    }
+  }
+  

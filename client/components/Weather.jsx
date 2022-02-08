@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import { getWeather } from './weatherAPI'
 
-function Weather() {
+function Weather () {
   const [weather, setWeather] = useState([])
 
   useEffect(() =>
@@ -13,7 +13,7 @@ function Weather() {
       .catch(err => {
         console.error(err)
       })
-    , [])
+  , [])
 
   console.log('Weather is rendered')
 
