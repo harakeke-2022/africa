@@ -103,6 +103,7 @@ h1 {
 }
 .comment-li:hover {
     background-color: rgba(255, 255, 255, .7);
+<<<<<<< HEAD
     border: #4CAF50 dashed 2px;
 }
 
@@ -125,3 +126,9 @@ h1 {
     }
   }
   
+||||||| merged common ancestors
+    border: #4CAF50 dashed 2px;
+}
+=======
+}
+>>>>>>> f095821c89a2bd10163b1d43016dfccbe4dbf948
